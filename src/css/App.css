@@ -6,6 +6,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  font-family: "Enriqueta", arial, serif;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p {
+  color: #333333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5625;
+  margin-bottom: 15px;
+}
+
 body {
   font-family: serif;
   font-size: 16px;
@@ -66,6 +84,7 @@ body {
 .entry p {
   margin-top: 10px;
   font-size: 32px;
+  color: white;
 }
 
 .entry button {
@@ -90,17 +109,65 @@ body {
   height: 90vh;
 }
 
+/* ABOUT SCREEN */
+
 .about-screen {
-  background-image: none;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+  padding-top: 100px;
 }
+
+.about-image {
+  width: 300px;
+  height: 400px;
+}
+
+.description {
+  width: 700px;
+}
+
+.about-info h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.contact-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  padding: 9.5px 19.5px;
+  background-color: rgb(61, 61, 221);
+}
+
+/* CONTACT SCREEN */
 
 .contact-screen {
   display: flex;
   flex-direction: column;
   height: 100vh;
   padding: 100px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .contact-title {
@@ -124,7 +191,7 @@ body {
   flex-direction: row;
   gap: 20px;
   justify-content: space-around;
-  margin: 20px 40px 20px 40px;
+  margin: 0px 40px 20px 40px;
 }
 
 .contact-info {
@@ -140,6 +207,7 @@ body {
 .contact-box {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .contact-icon {

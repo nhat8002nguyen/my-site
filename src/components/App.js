@@ -17,8 +17,8 @@ export default function App() {
             <Link class="nav-link" to="/about">
               About
             </Link>
-            <Link class="nav-link" to="/skill">
-              portfolio
+            <Link class="nav-link" to="/project">
+              Project
             </Link>
             <Link class="nav-link" to="/skill">
               blog

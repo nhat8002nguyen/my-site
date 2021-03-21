@@ -10,7 +10,7 @@ const LandingScreen = () => {
         <h1>Nhat Nguyen</h1>
         <p> Cool software developer ! </p>
         <Link to="/about">
-          <button type="submit">See more !</button>
+          <button type="submit">See more</button>
         </Link>
       </div>
     </div>
