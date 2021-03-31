@@ -1,42 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import LandingScreen from "./screens/LandingScreen";
 import AboutScreen from "./screens/AboutScreen";
-import SkillScreen from "./screens/SkillScreen";
+import BlogScreen from "./screens/BlogScreen";
 import ContactScreen from "./screens/ContactScreen";
+import MainScreen from "./screens/MainScreen";
 
 export default function App() {
   return (
     <div className="root">
       <Router>
-        <div class="header">
-          <Link class="logo" to="/">
-            My Logo
-          </Link>
-          <div className="navigate-link">
-            <Link class="nav-link" to="/about">
-              About
-            </Link>
-            <Link class="nav-link" to="/project">
-              Project
-            </Link>
-            <Link class="nav-link" to="/skill">
-              blog
-            </Link>
-            <Link class="nav-link" to="/contact">
-              Contact
-            </Link>
-          </div>
-        </div>
+        
         <Switch>
           <Route exact path="/">
-            <LandingScreen />
+            <MainScreen />
           </Route>
           <Route path="/about">
             <AboutScreen />
           </Route>
-          <Route path="/skill">
-            <SkillScreen />
+          <Route path="/blog">
+            <BlogScreen />
           </Route>
           <Route path="/contact">
             <ContactScreen />
